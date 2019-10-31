@@ -281,14 +281,15 @@ input[type=submit]:hover {
   padding-top: 0;
   padding-left: 20%;
   padding-right: 20%;
-  margin: 0;
+  margin: 0 auto;
 }
 .bottom--container {
   width: 100%;
   max-width: 100%;
   position: absolute;
   z-index: -1;
-  margin: 0;
+  width: 100%;
+  margin: 0 auto;
   padding: 0;
   background-color: #302a3b;
 }
