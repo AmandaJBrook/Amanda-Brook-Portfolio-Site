@@ -401,6 +401,9 @@ input[type=submit]:hover {
     max-width: 35%;
     height: auto;
   }
+  .image--container h1{
+    font-size: .7rem;
+  }
   .image--container h2{
     font-size: .7rem;
   }
@@ -417,6 +420,9 @@ input[type=submit]:hover {
   }
   #Banner {
     max-width: 410%;
+  }
+  .image--container h2{
+    font-size: .5rem;
   }
 }
 /* Footer */
