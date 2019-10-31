@@ -429,6 +429,9 @@ input[type=submit]:hover {
   }
 }
 /* Footer */
+footer {
+  width: 100%;
+}
 .footer p{
    text-align: bottom;
    position: static;
