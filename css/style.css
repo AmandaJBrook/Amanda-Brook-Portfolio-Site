@@ -339,13 +339,16 @@ input[type=submit]:hover {
     font-size: 1.6rem;
   }
 }
-@media only screen and (max-width: 700px), only screen and (-webkit-min-device-pixel-ratio: 4),
-       only screen and (-webkit-device-pixel-ratio : 4) {
+@media only screen and (max-width: 700px){
   .modal-content {
     width: 100%;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) only screen and (-webkit-min-device-pixel-ratio: 4),
+       only screen and (-webkit-device-pixel-ratio : 4),
+       only screen and (device-width: 360px),
+       only screen and (device-width: 640px),
+       only screen and (orientation: portrait) {
   .image--container {
     flex: 100%;
     max-width: 80%;
@@ -436,12 +439,11 @@ input[type=submit]:hover {
   }
 }
 /* Footer */
-
 .footer p{
    text-align: center;
    position: static;
    padding: 0px;
-   bottom: 0;
+   padding-bottom: 50px;
    width: 100%;
    height: 30px;
 }
