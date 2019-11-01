@@ -344,11 +344,7 @@ input[type=submit]:hover {
     width: 100%;
   }
 }
-@media screen and (max-width: 600px) only screen and (-webkit-min-device-pixel-ratio: 4),
-       only screen and (-webkit-device-pixel-ratio : 4),
-       only screen and (device-width: 360px),
-       only screen and (device-width: 640px),
-       only screen and (orientation: portrait) {
+@media screen and (max-width: 600px) {
   .image--container {
     flex: 100%;
     max-width: 80%;
