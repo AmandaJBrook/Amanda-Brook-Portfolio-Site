@@ -75,7 +75,7 @@ header {
 /* Top Navigation Page Anchors */
 .anchor h1 {
     margin: 0px;
-    padding-top: 100px;
+    padding-top: 150px;
     padding-bottom: 20px;
     font-size: 2rem;
     text-align: center;
@@ -417,6 +417,24 @@ input[type=submit]:hover {
     font-size: .7rem;
   }
 }
+@media screen and (max-width: 500px) {
+  #Banner {
+    max-width: 280%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .logo img {
+    max-width: 45%;
+    height: auto;
+  }
+  #Banner {
+    max-width: 410%;
+  }
+  .image--container h2{
+    font-size: .5rem;
+  }
+}
+/*Mobile Styling */
 @media only screen
   and (min-device-width: 320px)
   and (max-device-width: 812px)
@@ -463,25 +481,8 @@ input[type=submit]:hover {
       font-size: .7rem;
     }
     .image--container h2{
-      font-size: .7rem;
+      font-size: .5rem;
     }
-}
-@media screen and (max-width: 500px) {
-  #Banner {
-    max-width: 280%;
-  }
-}
-@media screen and (max-width: 300px) {
-  .logo img {
-    max-width: 45%;
-    height: auto;
-  }
-  #Banner {
-    max-width: 410%;
-  }
-  .image--container h2{
-    font-size: .5rem;
-  }
 }
 /* Footer */
 .footer p{
