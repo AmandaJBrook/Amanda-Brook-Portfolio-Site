@@ -344,7 +344,7 @@ input[type=submit]:hover {
     width: 100%;
   }
 }
-@media screen and (max-width: 600px) and (min-device-pixel-ratio: 4){
+@media screen and (max-width: 600px) {
   .image--container {
     flex: 100%;
     max-width: 80%;
@@ -354,10 +354,10 @@ input[type=submit]:hover {
   }
   .anchor p {
     text-indent: 2em;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    width: 80%;
   }
-
-  /* Responsive Top Nav */
+  /* Before Responsive Top Nav */
   .nav a {
     display: none;
   }
@@ -369,7 +369,18 @@ input[type=submit]:hover {
   #Banner {
     max-width: 240%;
   }
+  .logo img {
+    max-width: 35%;
+    height: auto;
+  }
+  .image--container h1{
+    font-size: .7rem;
+  }
+  .image--container h2{
+    font-size: .7rem;
+  }
 }
+/*  After Resonsive Nav Queries ONLY */
 @media screen and (max-width: 600px) {
   .nav.responsive {
     display: block;
@@ -401,27 +412,15 @@ input[type=submit]:hover {
     padding-top: 20px;
     padding-right: 30px;
     margin: 0;
-
-  }
-  .anchor p {
-    width: 80%;
-  }
-  .logo img {
-    max-width: 35%;
-    height: auto;
-  }
-  .image--container h1{
-    font-size: .7rem;
-  }
-  .image--container h2{
-    font-size: .7rem;
   }
 }
+/* Banner Sizing */
 @media screen and (max-width: 500px) {
   #Banner {
     max-width: 280%;
   }
 }
+/* Small Browser */
 @media screen and (max-width: 300px) {
   .logo img {
     max-width: 45%;
@@ -434,44 +433,34 @@ input[type=submit]:hover {
     font-size: .5rem;
   }
 }
-/*Mobile Styling */
+/* Mobile Styling */
 @media only screen
   and (min-device-width: 320px)
   and (max-device-width: 812px)
   and (-webkit-min-device-pixel-ratio: 3) {
-    .nav.responsive {
-      display: block;
-      justify-content: center;
-      text-align: center;
-      padding-bottom: 0;
+    .image--container {
+      flex: 100%;
+      max-width: 80%;
     }
-    .nav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .nav.responsive a {
-      display: block;
-      text-align: center;
-    }
-    .nav i {
-      display: block;
-      position: absolute;
-      right: 0;
-      top: 0;
-      float: right;
-      padding-top: 20px;
-      padding-right: 30px;
-    }
-    .nav.responsive i {
-      display: block;
-      float: right;
-      padding-top: 20px;
-      padding-right: 30px;
-      margin: 0;
+    .anchor img{
+      width: 70%;
     }
     .anchor p {
+      text-indent: 2em;
+      font-size: 1rem;
       width: 80%;
+    }
+    /* Before Responsive Top Nav */
+    .nav a {
+      display: none;
+    }
+    .nav .icon {
+      display: block;
+      padding-right: 10px;
+      margin-right: auto;
+    }
+    #Banner {
+      max-width: 240%;
     }
     .logo img {
       max-width: 35%;
@@ -481,8 +470,48 @@ input[type=submit]:hover {
       font-size: .7rem;
     }
     .image--container h2{
-      font-size: .5rem;
+      font-size: .7rem;
     }
+}
+@media screen and and (min-device-width: 320px)
+and (max-device-width: 812px)
+and (-webkit-min-device-pixel-ratio: 3) {
+    .nav.responsive {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 0;
+  }
+    display: block; {
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav.responsive a {
+    display: block;
+    text-align: center;
+  }
+  .nav i {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    float: right;
+    padding-top: 20px;
+    padding-right: 30px;
+  }
+  .nav.responsive i {
+    display: block;
+    float: right;
+    padding-top: 20px;
+    padding-right: 30px;
+    margin: 0;
+  }
 }
 /* Footer */
 .footer p{
