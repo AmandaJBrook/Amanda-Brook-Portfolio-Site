@@ -85,6 +85,7 @@ header {
 }
 /* About Section */
 .anchor p{
+    text-indent: 2em;
     margin: 0px auto;
     padding-top: 20px;
     padding-bottom: 0px;
@@ -353,7 +354,6 @@ input[type=submit]:hover {
     width: 70%;
   }
   .anchor p {
-    text-indent: 2em;
     font-size: 1rem;
     width: 80%;
   }
