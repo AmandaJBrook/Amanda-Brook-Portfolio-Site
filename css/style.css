@@ -417,6 +417,55 @@ input[type=submit]:hover {
     font-size: .7rem;
   }
 }
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    .nav.responsive {
+      display: block;
+      justify-content: center;
+      text-align: center;
+      padding-bottom: 0;
+    }
+    .nav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav.responsive a {
+      display: block;
+      text-align: center;
+    }
+    .nav i {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      float: right;
+      padding-top: 20px;
+      padding-right: 30px;
+    }
+    .nav.responsive i {
+      display: block;
+      float: right;
+      padding-top: 20px;
+      padding-right: 30px;
+      margin: 0;
+    }
+    .anchor p {
+      width: 80%;
+    }
+    .logo img {
+      max-width: 35%;
+      height: auto;
+    }
+    .image--container h1{
+      font-size: .7rem;
+    }
+    .image--container h2{
+      font-size: .7rem;
+    }
+}
 @media screen and (max-width: 500px) {
   #Banner {
     max-width: 280%;
