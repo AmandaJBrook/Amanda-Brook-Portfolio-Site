@@ -451,7 +451,7 @@ and (-webkit-min-device-pixel-ratio: 3) {
     width: 70%;
   }
   .anchor p {
-    font-size: 1.5rem;
+    font-size: 3rem;
     width: 80%;
   }
   /* Before Responsive Top Nav */
@@ -471,13 +471,13 @@ and (-webkit-min-device-pixel-ratio: 3) {
     height: auto;
   }
   .image--container h1{
-    font-size: 1.1rem;
+    font-size: 3rem;
   }
   .image--container h2{
-    font-size: 1rem;
+    font-size: 2.7rem;
   }
   .footer p {
-    font-size: 1.3rem;
+    font-size: 3rem;
   }
 }
 @media screen and (min-device-width: 320px)
@@ -505,7 +505,7 @@ and (-webkit-min-device-pixel-ratio: 3) {
     right: 0;
     top: 0;
     float: right;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-right: 30px;
   }
   .nav.responsive i {
