@@ -441,10 +441,44 @@ input[type=submit]:hover {
 @media screen and and (min-device-width: 320px)
 and (max-device-width: 812px)
 and (-webkit-min-device-pixel-ratio: 3) {
+  .image--container {
+    flex: 100%;
+    max-width: 80%;
+  }
+  .anchor img{
+    width: 70%;
+  }
+  .anchor p {
+    font-size: 1.1rem;
+    width: 80%;
+  }
+  /* Before Responsive Top Nav */
+  .nav a {
+    display: none;
+  }
+  .nav .icon {
+    display: block;
+    padding-right: 10px;
+    margin-right: auto;
+  }
   #Banner {
     max-width: 240%;
   }
-    .nav.responsive {
+  .logo img {
+    max-width: 35%;
+    height: auto;
+  }
+  .image--container h1{
+    font-size: 1.1rem;
+  }
+  .image--container h2{
+    font-size: 1rem;
+  }
+}
+@media screen and and (min-device-width: 320px)
+and (max-device-width: 812px)
+and (-webkit-min-device-pixel-ratio: 3) {
+  .nav.responsive {
     display: block;
     justify-content: center;
     text-align: center;
@@ -474,27 +508,5 @@ and (-webkit-min-device-pixel-ratio: 3) {
     padding-top: 20px;
     padding-right: 30px;
     margin: 0;
-  }
-  .anchor img{
-    width: 70%;
-  }
-  .anchor p {
-    text-indent: 2em;
-    font-size: 1.2rem;
-    width: 80%;
-  }
-  .logo img {
-    max-width: 35%;
-    height: auto;
-  }
-  .image--container {
-    flex: 100%;
-    max-width: 80%;
-  }
-  .image--container h1{
-    font-size: .7rem;
-  }
-  .image--container h2{
-    font-size: .7rem;
   }
 }
