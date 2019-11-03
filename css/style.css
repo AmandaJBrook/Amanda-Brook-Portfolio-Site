@@ -438,7 +438,7 @@ input[type=submit]:hover {
   }
 }
 /* Mobile Styling */
-@media screen and and (min-device-width: 320px)
+@media screen and (min-device-width: 320px)
 and (max-device-width: 812px)
 and (-webkit-min-device-pixel-ratio: 3) {
   .image--container {
@@ -475,7 +475,7 @@ and (-webkit-min-device-pixel-ratio: 3) {
     font-size: 1rem;
   }
 }
-@media screen and and (min-device-width: 320px)
+@media screen and (min-device-width: 320px)
 and (max-device-width: 812px)
 and (-webkit-min-device-pixel-ratio: 3) {
   .nav.responsive {
