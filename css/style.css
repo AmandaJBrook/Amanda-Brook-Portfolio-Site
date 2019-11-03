@@ -441,6 +441,7 @@ input[type=submit]:hover {
 @media screen and (min-device-width: 320px)
 and (max-device-width: 812px)
 and (-webkit-min-device-pixel-ratio: 3) {
+<<<<<<< HEAD
   .image--container {
     flex: 100%;
     max-width: 80%;
@@ -452,6 +453,8 @@ and (-webkit-min-device-pixel-ratio: 3) {
     font-size: 1.1rem;
     width: 80%;
   }
+=======
+>>>>>>> 9acccb32083d9bd07bd5969e669e93acafc02f31
   /* Before Responsive Top Nav */
   .nav a {
     display: none;
@@ -461,12 +464,33 @@ and (-webkit-min-device-pixel-ratio: 3) {
     padding-right: 10px;
     margin-right: auto;
   }
+  /* Mobile Specific Fonts and Img Sizing */
   #Banner {
     max-width: 280%;
+  }
+  header h1 {
+    font-size: 3.5rem;
+  }
+  header h2 {
+    font-size: 3rem;
   }
   .logo img {
     max-width: 35%;
     height: auto;
+  }
+  .anchor img{
+    width: 70%;
+  }
+  .anchor h1 {
+    font-size: 3.5rem;
+  }
+  .anchor p {
+    font-size: 3rem;
+    width: 80%;
+  }
+  .image--container {
+    flex: 100%;
+    max-width: 80%;
   }
   .image--container h1{
     font-size: 1.1rem;
@@ -492,6 +516,7 @@ and (-webkit-min-device-pixel-ratio: 3) {
   .nav.responsive a {
     display: block;
     text-align: center;
+    font-size: 3rem;
   }
   .nav i {
     transform: scale(4,4);
