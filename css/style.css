@@ -138,11 +138,10 @@ header  h2 {
 .gallery {
   /* border-style: solid;
   border-width: 5px; */
-  max-width: 90%;
   display: inline-block;
+  max-width: 90%;
   white-space: nowrap;
   overflow-x: auto;
-  justify-content: center;
   margin: 0px;
   padding-left: 30px;
   padding-right: 30px;
@@ -155,25 +154,19 @@ header  h2 {
   flex: 25%;
   max-width: 25%;
   margin: 15px;
-}/*
-#Graphic--design{
-  max-width: 90%;
-  margin: 0px;
-}*/
+}
 .image--container img{
-  object-fit: cover;
   width: 100%;
-  vertical-align: middle;
   font-size: 1rem;
-
 }
 .image--container h1{
-  font-size: .8rem;
-
+  padding-top: 10px;
+  white-space: initial;
+  font-size: 1.1rem;
 }
 .image--container h2{
-  font-size: .8rem;
-  width: auto;
+  white-space: initial;
+  font-size: 1rem;
 }
 .gallery img:hover {
  transform: scale(1.05);
@@ -251,7 +244,25 @@ header  h2 {
   text-decoration: none;
   cursor: pointer;
 }
-/* Contact Form */
+/* Contact Section */
+.bottom--container {
+  display: inline-block;
+  width: 100%;
+  z-index: -1;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #302a3b;
+  padding-bottom: 10px;
+}
+/* Footer */
+.footer p{
+   text-align: center;
+   position: static;
+   padding: 0px;
+   padding-bottom: 50px;
+   width: 100%;
+   height: 30px;
+}
 input[type=text], select, textarea {
   font-family: 'Open Sans', sans-serif;
   width: 100%;
@@ -282,14 +293,6 @@ input[type=submit]:hover {
   padding-left: 20%;
   padding-right: 20%;
   margin: 0 auto;
-}
-.bottom--container {
-  display: inline-block;
-  width: 100%;
-  z-index: -1;
-  margin: 0 auto;
-  padding: 0;
-  background-color: #302a3b;
 }
 /* Responsive Media Queries */
 @media only screen and (max-width: 1200px) {
@@ -354,7 +357,7 @@ input[type=submit]:hover {
     width: 70%;
   }
   .anchor p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     width: 80%;
   }
   /* Before Responsive Top Nav */
@@ -374,10 +377,10 @@ input[type=submit]:hover {
     height: auto;
   }
   .image--container h1{
-    font-size: .7rem;
+    font-size: 1.1rem;
   }
   .image--container h2{
-    font-size: .7rem;
+    font-size: 1rem;
   }
 }
 /*  After Resonsive Nav Queries ONLY */
@@ -434,55 +437,14 @@ input[type=submit]:hover {
   }
 }
 /* Mobile Styling */
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 812px)
-  and (-webkit-min-device-pixel-ratio: 3) {
-    .image--container {
-      flex: 100%;
-      max-width: 80%;
-    }
-    .anchor img{
-      width: 70%;
-    }
-    .anchor p {
-      text-indent: 2em;
-      font-size: 1rem;
-      width: 80%;
-    }
-    /* Before Responsive Top Nav */
-    .nav a {
-      display: none;
-    }
-    .nav .icon {
-      display: block;
-      padding-right: 10px;
-      margin-right: auto;
-    }
-    #Banner {
-      max-width: 240%;
-    }
-    .logo img {
-      max-width: 35%;
-      height: auto;
-    }
-    .image--container h1{
-      font-size: .7rem;
-    }
-    .image--container h2{
-      font-size: .7rem;
-    }
-}
 @media screen and and (min-device-width: 320px)
 and (max-device-width: 812px)
 and (-webkit-min-device-pixel-ratio: 3) {
+  #Banner {
+    max-width: 240%;
+  }
     .nav.responsive {
     display: block;
-    justify-content: center;
-    text-align: center;
-    padding-bottom: 0;
-  }
-    display: block; {
     justify-content: center;
     text-align: center;
     padding-bottom: 0;
@@ -512,13 +474,26 @@ and (-webkit-min-device-pixel-ratio: 3) {
     padding-right: 30px;
     margin: 0;
   }
-}
-/* Footer */
-.footer p{
-   text-align: center;
-   position: static;
-   padding: 0px;
-   padding-bottom: 50px;
-   width: 100%;
-   height: 30px;
+  .anchor img{
+    width: 70%;
+  }
+  .anchor p {
+    text-indent: 2em;
+    font-size: 1.2rem;
+    width: 80%;
+  }
+  .logo img {
+    max-width: 35%;
+    height: auto;
+  }
+  .image--container {
+    flex: 100%;
+    max-width: 80%;
+  }
+  .image--container h1{
+    font-size: .7rem;
+  }
+  .image--container h2{
+    font-size: .7rem;
+  }
 }
