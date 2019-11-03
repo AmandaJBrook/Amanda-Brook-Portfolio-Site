@@ -462,7 +462,7 @@ and (-webkit-min-device-pixel-ratio: 3) {
     margin-right: auto;
   }
   #Banner {
-    max-width: 240%;
+    max-width: 280%;
   }
   .logo img {
     max-width: 35%;
@@ -494,6 +494,7 @@ and (-webkit-min-device-pixel-ratio: 3) {
     text-align: center;
   }
   .nav i {
+    transform: scale(2.5,2.5);
     display: block;
     position: absolute;
     right: 0;
