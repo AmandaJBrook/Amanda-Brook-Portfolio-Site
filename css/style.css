@@ -443,9 +443,12 @@ input[type=submit]:hover {
        and (max-device-width: 812px)
        and (-webkit-min-device-pixel-ratio: 3) {
          header h1 {
-           font-size: 3.5rem;
+           font-size: 4rem;
          }
          header h2 {
+           font-size: 3.5rem;
+         }
+         .gallery--container p {
            font-size: 3rem;
          }
          .image--container {
@@ -456,7 +459,7 @@ input[type=submit]:hover {
            width: 70%;
          }
          .anchor h1 {
-           font-size: 2.7rem;
+           font-size: 4rem;
          }
          .anchor p {
            font-size: 3rem;
@@ -483,6 +486,9 @@ input[type=submit]:hover {
          }
          .image--container h2{
            font-size: 2.7rem;
+         }
+         .footer p {
+           font-size: 3rem;
          }
 }
 @media screen
