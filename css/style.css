@@ -474,6 +474,16 @@ input[type=submit]:hover {
            padding-right: 10px;
            margin-right: auto;
          }
+         .nav i {
+           display: block;
+           transform: scale(2.5,2.5);
+           position: absolute;
+           right: 0;
+           top: 0;
+           float: right;
+           padding-top: 50px;
+           padding-right: 50px;
+         }
          #Banner {
            max-width: 400%;
          }
@@ -489,7 +499,7 @@ input[type=submit]:hover {
          }
          .footer p {
            font-size: 3rem;
-           padding-bottom: 20px;
+           padding-bottom: 50px;
          }
 }
 @media screen
@@ -512,16 +522,7 @@ input[type=submit]:hover {
            font-size: 4rem;
            text-align: center;
          }
-         .nav i {
-           display: block;
-           transform: scale(2.5,2.5);
-           position: absolute;
-           right: 0;
-           top: 0;
-           float: right;
-           padding-top: 50px;
-           padding-right: 50px;
-         }
+
          .nav.responsive i {
            transform: scale(2.5,2.5);
            display: block;
