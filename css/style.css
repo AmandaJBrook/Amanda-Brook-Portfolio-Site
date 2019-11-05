@@ -468,7 +468,6 @@ input[type=submit]:hover {
          /* Before Responsive Top Nav */
          .nav a {
            display: none;
-
          }
          .nav .icon {
            display: block;
@@ -514,7 +513,7 @@ input[type=submit]:hover {
          }
          .nav i {
            display: block;
-           transform: scale(2.5,2.5);
+
            position: absolute;
            right: 0;
            top: 0;
@@ -523,10 +522,11 @@ input[type=submit]:hover {
            padding-right: 30px;
          }
          .nav.responsive i {
+           transform: scale(2.5,2.5);
            display: block;
            float: right;
-           padding-top: 20px;
-           padding-right: 30px;
+           padding-top: 30px;
+           padding-right: 50px;
            margin: 0;
          }
 }
