@@ -485,7 +485,7 @@ input[type=submit]:hover {
            padding-right: 50px;
          }
          #Banner {
-           max-width: 400%;
+           max-width: 500%;
          }
          .logo img {
            max-width: 35%;
@@ -523,7 +523,6 @@ input[type=submit]:hover {
            text-align: center;
          }
          .nav.responsive i {
-           transform: scale(2.5,2.5);
            display: block;
            float: right;
            padding-top: 50px;
