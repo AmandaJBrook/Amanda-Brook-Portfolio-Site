@@ -11,7 +11,7 @@ const content = paintingArray.map((item) => {
     paintingArticle.innerHTML =  `
           <!-- injected painting info for ${item.name} -->
           <figure class="painting">
-          <img class="myImages" src="${item.link}"></img>
+          <img class="myImages" data-lazy="${item.link}"></img>
           </figure>
           <h1 class="image--title" >${item.name} (${item.year})</h1>
           <h2 class="image--description">${item.medium} ${item.width}"X${item.height}"</h2>

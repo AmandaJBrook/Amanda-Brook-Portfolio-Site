@@ -3,6 +3,7 @@ $(document).ready(function(){
     dots: true,
     infinite: true,
     speed: 300,
+    lazyLoad: 'ondemand',
     slidesToShow: 5,
     slidesToScroll: 5,
     responsive: [
