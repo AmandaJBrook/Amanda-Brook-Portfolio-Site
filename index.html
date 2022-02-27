@@ -25,6 +25,10 @@
     <!-- Gallery Display JS -->
     <script type="module" src="js/painting-class.js" defer></script>
     <script type="module" src="js/painting-list.js" defer></script>
+    <script type="module" src="js/design-class.js" defer></script>
+    <script type="module" src="js/design-list.js" defer></script>
+    <script type="module" src="js/web-class.js" defer></script>
+    <script type="module" src="js/web-list.js" defer></script>
     <script type="module" src="js/gallery-fill.js" defer></script>
     <script type="module" src="js/gallery-modal.js" defer></script>
 
@@ -62,72 +66,12 @@
       <h1 class="anchor" id="portfolio">PORTFOLIO</h1>
       <main class="gallery--container">
           <p>Painting and Illustration</p>
-          <div class="gallery" id="painting--illustration">
-            
-          </div>
+          <div class="gallery" id="painting--illustration"></div>
           <p>Graphic Design</p>
-          <div class="gallery" id="graphic--design">
-            <div class="image--container">
-              <img class="myImages" id="myImg" src="images/Promo Design (2019).jpg" Alt="Promo Design (2019)"></img>
-              <h1 class="image--title">Promo Design (2019)</h1>
-              <h2 class="image--medium">Procreate</h2>
-            </div>
-            <div class="image--container">
-              <img class="myImages" id="myImg" src="images/Gem Card (2019).jpg" Alt="Gem Card (2019)"></img>
-              <h1 class="image--title">Gem Card (2019)</h1>
-              <h2 class="image--medium">Procreate</h2>
-            </div>
-            <div class="image--container">
-              <img class="myImages" id="myImg" src="images/Client Concept Art for WIP T-Shirt Design (2019).jpg" Alt="Client Concept Art for T-Shirt Design (2019)"></img>
-              <h1 class="image--title">Apparel Design (2019)</h1>
-              <h2 class="image--medium">Procreate</h2>
-            </div>
-            <div class="image--container">
-              <img class="myImages" id="myImg" src="images/Logo Design (2019).png" Alt="Logo Design (2019)"></img>
-              <h1 class="image--title">Logo Design (2019)</h1>
-              <h2 class="image--medium">Illustrator and Procreate</h2>
-            </div>
-            <div class="image--container">
-              <img class="myImages" id="myImg" src="images/Winter's Battle Event Poster (2018).jpg" Alt="Winter's Battle Event Poster (2018)"></img>
-              <h1 class="image--title">Event Poster (2018)</h1>
-              <h2 class="image--medium">Inkscape and Client's Art</h2>
-            </div>
-            <div class="image--container">
-              <img class="myImages" id="myImg" src="images/George Terry McDonald Business Card (2018).jpg" Alt="George Terry McDonald Business Card (2018)"></img>
-              <h1 class="image--title">GTM Business Card (2018)</h1>
-              <h2 class="image--medium">Inkscape and Client's Art</h2>
-            </div>
-            <div class="image--container">
-              <img class="myImages" id="myImg" src="images/Sae Shirt Design (2017).png" Alt="Sae Shirt Design (2017)"></img>
-              <h1 class="image--title">Sae Shirt Design (2017)</h1>
-              <h2 class="image--medium">Photoshop and Illustrator</h2>
-            </div>
-          </main>
-          <!--
-          <p>3D Design</p>
-          <div class="gallery" id="3D--design">
-                <div class="image--container"><img class="myImages" id="myImg" src="images/Garden Slug (2018).jpg" Alt="Garden Slug (2018)"></img>
-                  <h1>Garden Slug (2018)</h1>
-                  <h2>Plywood and acrylic paint</h2>
-                </div>
-                <div class="image--container"><img class="myImages" id="myImg" src="images/Instrument (2017).jpg" Alt="Instrument (2017)"></img>
-                  <h1>Instrument (2017)</h1>
-                  <h2>Basswood, nlyon string, acrlic paint</h2>
-                </div>
-                <div class="image--container"><img class="myImages" id="myImg" src="images/Meditation Bench (2018).jpg" Alt="Meditation Bench (2018)"></img>
-                  <h1>Meditation Bench (2018)</h1>
-                  <h2>Red cedar, acrylic paint, hinges</h2>
-                </div>
-                <div class="image--container"><img class="myImages" id="myImg" src="images/Buried Failure (2018).jpg" Alt="Buried Failure (2018)"></img>
-                  <h1>Buried Failure (2018)</h1>
-                  <h2>led light, epoxy, wood</h2>
-                </div>
-                <div class="image--container"><img class="myImages" id="myImg" src="images/Time Altar (2018).jpg" Alt="Time Altar (2018)"></img>
-                  <h1>Time Altar (2018)</h1>
-                  <h2>touchDesigner, wood</h2>
-                </div>
-              </div>
-            -->
+          <div class="gallery" id="graphic--design"></div>
+          <p>Web Design and Development</p>
+          <div class="gallery" id="web--design"></div>
+      </main>
       <!-- Modal Image Info (Refers to Javascript) -->
       <article id="myModal" class="modal">
         <span class="close">&times;</span>
@@ -135,7 +79,6 @@
         <div id="imageTitle">
         </div>
       </article>
-       </div>
     </section>
     <!-- About -->
     <section class="about">
@@ -147,8 +90,8 @@
           <article>
             <p>
               <em>Hello, I'm Amanda.</em></br>
-              This website is the coelescion of studying aspects of
-              intrinsic motivation, emotion, and communication through art and design.
+              This website is the coelescion of my studies regarding
+              intrinsic motivation, emotion, and communication through art, design, and coding.
             </p>
             <p id="paragraph--2">
               <!-- VERSION 1 : Whether it's the love of a pet or a dream that dredges up your deepest fears, those images become
@@ -163,28 +106,14 @@
             </p>
           </article>
         </div>
-
     </section>
     <!-- Contact and Footer -->
   <footer>
     <h1 class="anchor" id="contact">CONTACT</h1>
-    <!-- Php for hosting on non-static platform
-      <div class="contact--form">
-      <form action="action_page.php">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name">
-        <label for="email">Email</label>
-        <input type="text" id="email" name="email">
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" style="height:200px"></textarea>
-        <input type="submit" value="Submit">
-      </form>
-      </div>
-    -->
     <div class= footer>
         <p> amandajbrook.contact@gmail.com</p>
         <a href="idea-garden.html">Idea Garden</a>
-      </div>
+    </div>
   </footer>
     <!-- Javascript-->
     <!-- Mobile & Responsive Nav Script-->

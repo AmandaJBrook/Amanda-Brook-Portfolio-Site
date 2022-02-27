@@ -1,5 +1,3 @@
-// Create painting class that hides varnish type if it is not varnished
-
 class Painting {
   constructor(
     // Define parameters here

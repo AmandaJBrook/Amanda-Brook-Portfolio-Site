@@ -86,12 +86,14 @@ header {
   color: var(--primary);
 }
 /* Logo & Title Section */
+
 .logo img {
   width: auto;
   height: 200px;
   padding-top: 30px;
   padding-bottom: 0px;
 }
+
 header h1 {
   font-family: var(--serif-typeface);
   font-size: 2rem;
@@ -147,12 +149,12 @@ header h2 {
 figure {
   margin: 0;
 }
+
 .image--container {
-  display: inline-block;
-  flex: 25%;
-  max-width: 25%;
+  /* max-width: 25%; */
   margin: 15px;
 }
+
 .image--container img {
   width: 100%;
   font-size: 1rem;
@@ -244,9 +246,11 @@ figure {
   margin-bottom: 60px;
 }
 .about img {
-  width: 300px;
-  height: 100%;
+  border-radius: 50%;
+  width: 350px;
+
   object-fit: cover;
+  padding: 30px;
 }
 .about p {
   text-indent: 2em;
