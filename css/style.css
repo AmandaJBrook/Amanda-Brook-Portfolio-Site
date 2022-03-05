@@ -49,6 +49,7 @@ header {
   background-image: url("../images/Banner.jpg");
   background-position: center;
   background-size: cover;
+  padding-top: 30px;
   margin-bottom: 10vh;
 }
 .nav {
@@ -56,12 +57,15 @@ header {
   grid-template-columns: repeat(3, 180px);
   justify-content: center;
   list-style-type: none;
-  margin: 0;
+  position: absolute;
+  top: 10px;
   padding-top: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
   z-index: 3;
 }
 .nav li {
-  margin: 0;
   color: var(--light);
   -webkit-transition: color 0.5s; /* For Safari 3.0 to 6.0 */
   transition: color scale(0.5); /* For modern browsers */
@@ -86,14 +90,12 @@ header {
   color: var(--primary);
 }
 /* Logo & Title Section */
-
 .logo img {
   width: auto;
   height: 200px;
   padding-top: 30px;
   padding-bottom: 0px;
 }
-
 header h1 {
   font-family: var(--serif-typeface);
   font-size: 2rem;
@@ -132,7 +134,7 @@ header h2 {
   transform: scale(1.05);
 }
 .gallery .slick-dots {
-  bottom: 10px;
+  bottom: 5px;
 }
 .gallery .slick-dots li button:before {
   color: white;
@@ -146,15 +148,19 @@ header h2 {
 .slick-slide.slick-loading img {
   display: none;
 }
+.slick-initialized .slick-slide {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 figure {
   margin: 0;
+  align-items: center;
 }
-
 .image--container {
-  /* max-width: 25%; */
   margin: 15px;
 }
-
 .image--container img {
   width: 100%;
   font-size: 1rem;
@@ -190,8 +196,8 @@ figure {
 .modal-content {
   margin: auto;
   display: block;
-  height: 70vh;
-  max-width: 800px;
+  height: auto;
+  max-width: 80vw;
 }
 #caption {
   margin: auto;
@@ -233,17 +239,14 @@ figure {
   cursor: pointer;
 }
 /* About Section */
-.portrait--container {
-  flex-shrink: 1;
+.about {
+  margin-bottom: 60px;
 }
 .about .flex--container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-}
-.about {
-  margin-bottom: 60px;
 }
 .about img {
   border-radius: 50%;
@@ -281,39 +284,6 @@ footer p {
 }
 footer a {
   display: none;
-}
-input[type="text"],
-select,
-textarea {
-  font-family: "Open Sans", sans-serif;
-  width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px;
-  margin-bottom: 16px;
-  padding: 12px;
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-input[type="submit"] {
-  font-family: "Open Sans", sans-serif;
-  background-color: #a2cf00;
-  color: var(--light);
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  padding: 12px 20px;
-}
-input[type="submit"]:hover {
-  background-color: #648000;
-}
-.contact--form {
-  width: 100%;
-  border-radius: 5px;
-  margin: 0 auto;
-  padding-top: 0;
-  padding-left: 20%;
-  padding-right: 20%;
 }
 /* Responsive Media Queries */
 @media only screen and (max-width: 800px) {
@@ -404,10 +374,11 @@ input[type="submit"]:hover {
     padding-top: 30px;
     padding-bottom: 0;
     padding-left: 0px;
+    top: 100px;
+    transform: 0;
     z-index: 2;
     background-color: black;
   }
-
   .nav.responsive .icon {
     position: absolute;
     top: 10px;
