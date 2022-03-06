@@ -315,12 +315,11 @@ footer a {
   }
 }
 @media screen and (max-width: 600px) {
-  .image--container {
-    flex: 100%;
-    max-width: 80%;
+  .about .flex--container {
+    display: block;
   }
   .about img {
-    width: 60%;
+    width: 90%;
   }
   .anchor h1 {
     font-size: 30pt;
@@ -352,14 +351,15 @@ footer a {
   .logo h2 {
     font-size: 1.5em;
   }
+  .image--container {
+    flex: 100%;
+    max-width: 80%;
+  }
   .image--container h1 {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
   .image--container h2 {
-    font-size: 1rem;
-  }
-  .about .flex--container {
-    display: block;
+    font-size: 1.1rem;
   }
 }
 /* Nav Resonsive Nav Queries ONLY */
@@ -367,7 +367,6 @@ footer a {
   header {
     margin-bottom: 0px;
   }
-
   .nav.responsive {
     display: block;
     position: fixed;
@@ -415,7 +414,7 @@ footer a {
     padding: 5px 20px;
   }
   .anchor {
-    font-size: 1.2em;
+    font-size: 1.8em;
     letter-spacing: 0.4em;
   }
   .gallery--container p {
@@ -428,9 +427,9 @@ footer a {
     font-size: 0.8rem;
   }
   .about p {
-    font-size: 1em;
+    font-size: 1.4em;
   }
   .footer p {
-    font-size: 0.9em;
+    font-size: 110%;
   }
 }
