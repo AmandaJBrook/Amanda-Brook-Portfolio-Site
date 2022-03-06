@@ -57,11 +57,11 @@ header {
   grid-template-columns: repeat(3, 180px);
   justify-content: center;
   list-style-type: none;
-  position: absolute;
-  top: 10px;
-  padding-top: 30px;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  /* position: absolute; */
+  /* top: 10px; */
+  /* padding-top: 0px; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
   margin: 0;
   z-index: 3;
 }
@@ -287,11 +287,8 @@ footer a {
 }
 /* Responsive Media Queries */
 @media only screen and (max-width: 800px) {
-  body {
-    background-size: 900px, 400px;
-  }
   .anchor h1 {
-    font-size: 1.6rem;
+    font-size: 1.6em;
   }
   .anchor p {
     width: 70%;
@@ -316,10 +313,6 @@ footer a {
     width: 100%;
     vertical-align: middle;
   }
-  .contact--form {
-    border-radius: 5px;
-    padding: 10vw;
-  }
 }
 @media screen and (max-width: 600px) {
   .image--container {
@@ -329,17 +322,24 @@ footer a {
   .about img {
     width: 60%;
   }
+  .anchor h1 {
+    font-size: 30pt;
+  }
+
   .anchor p {
     font-size: 1.1rem;
     width: 80%;
   }
   /* Before Responsive Top Nav */
+  .nav {
+    position: fixed;
+  }
   .nav a {
     display: none;
   }
   .nav .icon {
     display: block;
-    padding-right: 10px;
+    padding-right: 0;
     margin-right: auto;
   }
   .logo img {
@@ -365,17 +365,16 @@ footer a {
 }
 /* Nav Resonsive Nav Queries ONLY */
 @media screen and (max-width: 600px) {
+  header {
+    margin-bottom: 0px;
+  }
   .nav.responsive {
     display: block;
     position: fixed;
     width: 100%;
-    justify-content: center;
-    text-align: center;
     padding-top: 30px;
-    padding-bottom: 0;
-    padding-left: 0px;
-    top: 100px;
-    transform: 0;
+    top: 0px;
+    transform: 0px;
     z-index: 2;
     background-color: black;
   }
@@ -394,16 +393,15 @@ footer a {
   .nav i {
     display: block;
     position: fixed;
-    right: 0;
-    top: 0;
+    right: -1vw;
+    top: 12px;
     font-size: 1em;
-    float: right;
-    padding-top: 30px;
+    padding-top: 20px;
     padding-right: 30px;
   }
   .nav.responsive i {
     display: block;
-    float: right;
+    top: 0px;
     margin: 0;
     padding-top: 30px;
     padding-right: 30px;
@@ -414,10 +412,17 @@ footer a {
   .about,
   .portfolio,
   .contact {
-    padding: 5px 30px;
+    padding: 5px 20px;
+  }
+  .anchor {
+    font-size: 1.2em;
+    letter-spacing: 0.4em;
+  }
+  .gallery--container p {
+    font-size: 1em;
   }
   .logo img {
-    max-width: 100px;
+    max-width: 150px;
   }
   .image--container h2 {
     font-size: 0.8rem;
@@ -425,9 +430,17 @@ footer a {
   .about p {
     font-size: 1em;
   }
+  .footer p {
+    font-size: 0.9em;
+  }
 }
 /* Mobile Styling */
 @media screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .about,
+  .portfolio,
+  .contact {
+    padding: 5px 20px;
+  }
   header h1 {
     font-size: 2rem;
   }
@@ -437,13 +450,16 @@ footer a {
   .gallery--container p {
     font-size: 2rem;
   }
+  .slick-dots {
+    font-size: 30em;
+  }
   .about img {
     width: 100%;
   }
-  .anchor {
-    font-size: 2.2em;
+  .anchor h1 {
+    font-size: 1em;
   }
-  .anchor p {
+  .gallery--container p {
     font-size: 1rem;
     width: 80%;
   }
@@ -452,21 +468,8 @@ footer a {
     font-size: 1em;
     display: none;
   }
-  .nav .icon {
-    display: block;
-    margin-right: 0px;
-    padding-right: 10px;
-  }
   .nav i {
     font-size: 1em;
-    display: block;
-    transform: scale(2.5, 2.5);
-    position: fixed;
-    top: 0;
-    right: 0;
-    float: right;
-    padding-top: 20px;
-    padding-right: 15px;
   }
   .logo img {
     max-width: 35%;
@@ -484,17 +487,6 @@ footer a {
   }
 }
 @media screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-  .nav.responsive {
-    position: fixed;
-    width: 100vw;
-    justify-content: center;
-    padding-bottom: 0;
-  }
-  .nav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
   .nav.responsive a {
     display: flex;
     justify-content: center;
