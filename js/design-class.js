@@ -1,12 +1,12 @@
 class Design {
     constructor(
-      // Define parameters here
+      // parameters
       link,
       name,
       year,
       program,
     ) {
-      //Define properties here
+      // properties
       this.link = link;
       this.name = name;
       this.year = year;

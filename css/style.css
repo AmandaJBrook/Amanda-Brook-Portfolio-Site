@@ -9,7 +9,10 @@
   --light: #e0e0e0;
   /*Drop Shadow*/
   --shadow: 0 2px 8px rgba(104, 104, 104, 2);
+  /* Black Glass */
+  --glass: #000000ab;
 }
+/* Border Box */
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -19,53 +22,57 @@ html {
 *:after {
   box-sizing: inherit;
 }
+/* Body contains background, grid template, default font */
 body {
-  background-color: var(--dark);
+  background-image: 
+  url("../images/Banner.jpg"), 
+  linear-gradient(to bottom,rgb(33, 44, 53) 40%,rgb(0, 0, 0) 100%);
+  background-position: top, bottom;
+  background-size: 100% auto, 100%;
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
   text-align: center;
   font-family: var(--serif-typeface);
   color: var(--light);
   margin: 0px;
   padding: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
 }
 ul {
   padding-inline-start: 0px;
 }
-/* Section Styles*/
-.anchor {
-  font-size: 3em;
-  letter-spacing: 0.7rem;
-  text-align: center;
-  margin: 0px;
-  padding-top: 50px;
-  padding-bottom: 20px;
-}
-.about,
-.portfolio,
-.contact {
-  padding: 30px 50px;
-}
 /* Top Navigation */
 header {
-  background-image: url("../images/Banner.jpg");
-  background-position: center;
-  background-size: cover;
-  padding-top: 30px;
   margin-bottom: 10vh;
+  z-index: 3;
+}
+nav {
+  display: grid;
+  position: fixed;
+  grid-template-rows: minmax(min-content, 60px);
+  padding: 10px;
+  background-color: var(--glass);
+  width: 100%;
 }
 .nav {
   display: grid;
-  grid-template-columns: repeat(3, 180px);
-  justify-content: center;
+  grid-auto-flow: column;
+  grid-gap: 30px;
+  place-items: center;
+  justify-self: right;
   list-style-type: none;
-  /* position: absolute; */
-  /* top: 10px; */
-  /* padding-top: 0px; */
-  /* left: 50%; */
-  /* transform: translate(-50%, -50%); */
-  margin: 0;
-  z-index: 3;
+  margin: -20px;
+}
+.nav--container {
+    align-content: space-evenly;
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
 }
 .nav li {
+  justify-self: right;
   color: var(--light);
   -webkit-transition: color 0.5s; /* For Safari 3.0 to 6.0 */
   transition: color scale(0.5); /* For modern browsers */
@@ -90,15 +97,22 @@ header {
   color: var(--primary);
 }
 /* Logo & Title Section */
+.logo {
+ text-align: start;
+ justify-self: left;
+ padding-left: 10px;
+ padding-top: 2px; 
+ z-index: 2;
+ width: max-content;
+ height: max-content;
+}
 .logo img {
-  width: auto;
-  height: 200px;
-  padding-top: 30px;
-  padding-bottom: 0px;
+  width: 60px;
+  height: auto;
 }
 header h1 {
   font-family: var(--serif-typeface);
-  font-size: 2rem;
+  font-size: 4rem;
   letter-spacing: 0.7rem;
   color: var(--primary);
   text-shadow: 1px 2px 5px #3d3d3d;
@@ -106,7 +120,8 @@ header h1 {
   text-decoration: none;
   margin: 0px;
   padding-bottom: 10px;
-  padding-top: 20px;
+  padding-top: 15%;
+  /* display: table-caption; */
 }
 header h2 {
   font-family: var(--serif-typeface);
@@ -120,7 +135,26 @@ header h2 {
   padding-bottom: 30px;
   padding-top: 0px;
 }
-/* Portfolio Section */
+.grid--main {
+  width: 100vw;
+  
+}
+/* Section Styles*/
+.anchor {
+  font-size: 3em;
+  letter-spacing: 0.7rem;
+  text-align: center;
+  margin: 0px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.about,
+.portfolio,
+.contact {
+  padding: 30px 50px;
+}
+
+/* Portfolio Section with Slick Slider */
 .gallery--container p {
   font-size: 2em;
   text-transform: uppercase;
@@ -153,7 +187,6 @@ header h2 {
   display: inline-block;
   vertical-align: middle;
 }
-
 figure {
   margin: 0;
   align-items: center;
@@ -240,26 +273,23 @@ figure {
 }
 /* About Section */
 .about {
+  display: inline-block;
+  overflow: auto;
   margin-bottom: 60px;
 }
-.about .flex--container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
 .about img {
+  float: left;
+  width: 300px;
   border-radius: 50%;
-  width: 350px;
-
   object-fit: cover;
-  padding: 30px;
+  shape-outside: ellipse(147px 188px at 49.95% 50.03%);
 }
 .about p {
-  text-indent: 2em;
   font-size: 1.2em;
   text-align: left;
   max-width: 500px;
+  left: 50px;
+  position: relative;
 }
 /* Footer & Contact Section */
 footer {
@@ -268,7 +298,6 @@ footer {
   z-index: -1;
   margin: 0 auto;
   padding: 30px 0px;
-  background-color: #332e4d;
 }
 #contact {
   padding-top: 50px;
@@ -315,11 +344,11 @@ footer a {
   }
 }
 @media screen and (max-width: 600px) {
-  .about .flex--container {
-    display: block;
-  }
   .about img {
-    width: 90%;
+    width: 70%;
+  }
+  .about .flex--container {
+    display: inline-grid;
   }
   .anchor h1 {
     font-size: 30pt;
@@ -329,9 +358,6 @@ footer a {
     width: 80%;
   }
   /* Before Responsive Top Nav */
-  .nav {
-    position: fixed;
-  }
   .nav a {
     display: none;
   }
@@ -339,17 +365,6 @@ footer a {
     display: block;
     padding-right: 0;
     margin-right: auto;
-  }
-  .logo img {
-    max-width: 35%;
-    height: auto;
-  }
-  .logo h1 {
-    padding: 20px 30px;
-    font-size: 1.6em;
-  }
-  .logo h2 {
-    font-size: 1.5em;
   }
   .image--container {
     flex: 100%;
@@ -362,7 +377,7 @@ footer a {
     font-size: 1.1rem;
   }
 }
-/* Nav Resonsive Nav Queries ONLY */
+/* Nav Responsive Nav Queries ONLY */
 @media screen and (max-width: 600px) {
   header {
     margin-bottom: 0px;
@@ -372,15 +387,19 @@ footer a {
     position: fixed;
     width: 100%;
     padding-top: 30px;
-    top: 0px;
+    top: 0;
+    left: 0;
     transform: 0px;
     z-index: 2;
     background-color: black;
+    margin: auto;
   }
   .nav.responsive .icon {
     position: absolute;
     top: 10px;
-    right: -35vw;
+    right: 0;
+    margin-right: -24px;
+    padding: 14px;
   }
   .nav.responsive a {
     display: block;
@@ -390,20 +409,13 @@ footer a {
     padding-right: 20vw;
   }
   .nav i {
-    display: block;
-    position: fixed;
-    right: -1vw;
-    top: 12px;
+    display: inline-grid;
     font-size: 1.5em;
-    padding-top: 20px;
     padding-right: 30px;
   }
   .nav.responsive i {
     display: block;
-    top: 0px;
     margin: 0;
-    padding-top: 30px;
-    padding-right: 30px;
   }
 }
 /* Small Browser */

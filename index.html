@@ -46,71 +46,64 @@
     <header>
       <!-- Top Navigation -->
       <nav>
-        <ul class="nav" id="myNav">
-          <li class="nav--button"><a href="#portfolio">portfolio</a></li>
-          <li class="nav--button"><a href="#about">about</a></li>
-          <li class="nav--button"><a href="#contact">contact</a></li>
-          <!-- Created onclick event for mobile nav -->
-          <li class="nav--button"><a href="javascript:void(0);"class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
-        </ul>
-      </nav>
-      <!-- Logo and Title -->
-      <section class="logo">
-        <a href><img src="images/Logo.png" Alt="Logo"></a>
-        <h1>AMANDA BROOK</h1>
-        <h2>art and design</h2>
-      </section>
-    </header>
-    <!-- Portfolio Gallery -->
-    <section class="portfolio">
-      <h1 class="anchor" id="portfolio">PORTFOLIO</h1>
-      <main class="gallery--container">
-          <p>Painting and Illustration</p>
-          <div class="gallery" id="painting--illustration"></div>
-          <p>Graphic Design</p>
-          <div class="gallery" id="graphic--design"></div>
-          <p>Web Design and Development</p>
-          <div class="gallery" id="web--design"></div>
-      </main>
-      <!-- Modal Image Info (Refers to Javascript) -->
-      <article id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
-        <div id="imageTitle">
+        <div class="nav--container">
+          <div class="logo">
+            <a href><img src="images/Logo.png" Alt="Logo"></a>
+          </div>
+          <ul class="nav" id="myNav">
+            <li class="nav--button"><a href="#portfolio">portfolio</a></li>
+            <li class="nav--button"><a href="#about">about</a></li>
+            <li class="nav--button"><a href="#contact">contact</a></li>
+            <!-- Created onclick event for mobile nav -->
+            <li class="nav--button"><a href="javascript:void(0);"class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
+          </ul>
         </div>
-      </article>
-    </section>
-    <!-- About -->
-    <section class="about">
-        <h1 class="anchor" id="about">ABOUT</h1>
-        <div class='flex--container'>
-          <div class="portrait--container">
+      </nav>
+      <!-- Title -->
+      <h1>AMANDA BROOK</h1>
+      <h2>art and design</h2>
+    </header>
+    <main class="grid--main">
+      <!-- Portfolio Gallery -->
+      <section class="portfolio">
+        <h1 class="anchor" id="portfolio">PORTFOLIO</h1>
+        <main class="gallery--container">
+            <p>Painting and Illustration</p>
+            <div class="gallery" id="painting--illustration"></div>
+            <p>Graphic Design</p>
+            <div class="gallery" id="graphic--design"></div>
+            <p>Web Design and Development</p>
+            <div class="gallery" id="web--design"></div>
+        </main>
+        <!-- Modal Image Info (Refers to Javascript) -->
+        <article id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="imageTitle">
+          </div>
+        </article>
+      </section>
+      <!-- About -->
+      <section class="about">
+          <h1 class="anchor" id="about">ABOUT</h1>
+          
+          <article>
             <picture>
               <source srcset="images/Self Portrait.webp" type="image/webp">
               <source srcset="images/Self Portrait.webp" type="image/jpeg">
-              <img src="images/Self Portrait.jpg"></img>
-           </picture>
-          </div>
-          <article>
+              <img loading="lazy" src="images/Self Portrait.jpg" alt="Artist's Portriat"></img>
+            </picture>
             <p>
-              <em>Hello, I'm Amanda.</em></br>
-              This website is the coelescion of my studies regarding
-              intrinsic motivation, emotion, and communication through art, design, and coding.
+              <em>Hello, I'm Amanda.</em></br.
+                This website is the coelescion of my studies regarding
+                intrinsic motivation, emotion, and communication through art, design, and coding.
             </p>
             <p id="paragraph--2">
-              <!-- VERSION 1 : Whether it's the love of a pet or a dream that dredges up your deepest fears, those images become
-              ingrained and imprinted within our minds.
-              Imagery and language can become a reminder of such things. Combining an imprinted memory with a stylized emotional
-              warping can serve to amplify these emotions that rise to our consciousness. -->
-              <!-- VERSION 2: -->
-              <!-- Studying aspects of intrinsic and adaptive motivation
-              , emotion, and communication through art and design. for looking inward and outward.
-              I aspire for my designs to evoke
-              imagery. -->
+              My goal is to create a space for interaction with my work and exploring the intersection of internet art and user-friendly design.
             </p>
           </article>
-        </div>
-    </section>
+      </section>
+    </main>
     <!-- Contact and Footer -->
   <footer>
     <h1 class="anchor" id="contact">CONTACT</h1>

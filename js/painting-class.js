@@ -1,6 +1,6 @@
 class Painting {
   constructor(
-    // Define parameters here
+    // parameters
     link,
     name,
     year,
@@ -8,7 +8,7 @@ class Painting {
     width,
     height,
   ) {
-    //Define properties here
+    // properties
     this.link = link;
     this.name = name;
     this.year = year;
