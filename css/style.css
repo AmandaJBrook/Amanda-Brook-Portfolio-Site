@@ -24,9 +24,8 @@ html {
 }
 /* Body contains background, grid template, default font */
 body {
-  background-image: 
-  url("../images/Banner.jpg"), 
-  linear-gradient(to bottom,rgb(33, 44, 53) 40%,rgb(0, 0, 0) 100%);
+  background-image: url("../images/Banner.jpg"),
+    linear-gradient(to bottom, rgb(33, 44, 53) 40%, rgb(0, 0, 0) 100%);
   background-position: top, bottom;
   background-size: 100% auto, 100%;
   background-blend-mode: lighten;
@@ -53,7 +52,7 @@ nav {
   position: fixed;
   grid-template-rows: minmax(min-content, 60px);
   padding: 10px;
-  background-color: var(--glass);
+  /* background-color: var(--glass); */
   width: 100%;
 }
 .nav {
@@ -66,10 +65,10 @@ nav {
   margin: -20px;
 }
 .nav--container {
-    align-content: space-evenly;
-    display: grid;
-    grid-auto-flow: column;
-    place-items: center;
+  align-content: space-evenly;
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
 }
 .nav li {
   justify-self: right;
@@ -98,13 +97,13 @@ nav {
 }
 /* Logo & Title Section */
 .logo {
- text-align: start;
- justify-self: left;
- padding-left: 10px;
- padding-top: 2px; 
- z-index: 2;
- width: max-content;
- height: max-content;
+  text-align: start;
+  justify-self: left;
+  padding-left: 10px;
+  padding-top: 2px;
+  z-index: 2;
+  width: max-content;
+  height: max-content;
 }
 .logo img {
   width: 60px;
@@ -137,7 +136,6 @@ header h2 {
 }
 .grid--main {
   width: 100vw;
-  
 }
 /* Section Styles*/
 .anchor {
@@ -344,8 +342,16 @@ footer a {
   }
 }
 @media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 3rem;
+    padding-top: 30%;
+  }
   .about img {
     width: 70%;
+    float: none;
+  }
+  .about p {
+    left: 5px;
   }
   .about .flex--container {
     display: inline-grid;
